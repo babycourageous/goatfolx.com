@@ -1,0 +1,15 @@
+{
+  "title": "Goat Folx",
+  "url": "https://11ty-netlify-starter.netlify.com",
+  "description": "Goat rentals to clear invasive and unwanted plants.",
+  "nav": [
+    {
+      "item": "Home",
+      "url": "/"
+    },
+    {
+      "item": "About",
+      "url": "/about"
+    }
+  ]
+}
