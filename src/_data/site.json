@@ -1,7 +1,7 @@
 {
   "title": "Goat Folx",
   "url": "https://11ty-netlify-starter.netlify.com",
-  "description": "net",
+  "description": "billy goat rescue and native habitat restoration",
   "nav": [
     {
       "item": "Home",
@@ -10,6 +10,10 @@
     {
       "item": "About",
       "url": "/about"
+    },
+    {
+      "item": "Contact Us",
+      "url": "/contact"
     }
   ]
 }
