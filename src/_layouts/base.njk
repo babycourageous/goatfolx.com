@@ -13,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{{ '/css/styles.css' | url }}">
   </head>
   <body class="flex flex-col min-h-screen font-sans bg-gray-100">
-    <!-- include svg sprite -->
-    <span style="display:none;">{% include "svg/sprite.symbol.svg" %}</span>
+    {%- include "header.njk" -%}
     <main class="container flex flex-col justify-center items-center flex-1 mx-auto py-8">
       {{ content | safe }}
     </main>

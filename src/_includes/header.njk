@@ -1,11 +1,3 @@
-<header class="container flex justify-between items-center mx-auto border-b border-gray-700 bg-gray-800">
-  <nav class="-mb-px font-light text-white">
-    <ul class="flex oh-6">
-      {%- for nav in site.nav -%}
-        <li>
-          <a class="block pt-10 pb-6 hover:text-teal-200 border-b border-transparent hover:border-teal-200 uppercase{% if nav.url == page.url %} text-teal-200{% endif %}" href="{{ nav.url | url }}">{{ nav.item }}</a>
-        </li>
-      {%- endfor -%}
-    </ul>
-  </nav>
+<header class="container flex justify-between items-center mx-auto px-4 border-b border-orange-700">
+  <h1 class="w-full font-displayOne text-4xl text-orange-700">GoatFolx<span class="ml-4 font-displayOne text-gray-800 text-xl text-right">billy goat rescue and native habitat restoration</span></h1>
 </header>
