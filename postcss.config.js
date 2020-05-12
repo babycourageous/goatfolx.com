@@ -8,7 +8,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./src/**/*.html', './src/**/*.njk'],
 
   // Include any special characters you're using in this regular expression
-  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+  defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
 })
 
 module.exports = {
@@ -16,7 +16,8 @@ module.exports = {
     postcssimport,
     precss,
     tailwindcss,
-    process.env.NODE_ENV === 'production' && autoprefixer,
+    // process.env.NODE_ENV === 'production' && autoprefixer,
+    autoprefixer,
     process.env.NODE_ENV === 'production' && cssnano,
     process.env.NODE_ENV === 'production' && purgecss,
   ],
