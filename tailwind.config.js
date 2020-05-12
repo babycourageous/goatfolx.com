@@ -26,7 +26,14 @@ module.exports = {
       displayOne: 'Poiret One, cursive',
       displayTwo: 'Unica One, cursive',
     },
-    extend: {},
+    extend: {
+      colors: {
+        header: 'rgba(0, 0, 0, .6)',
+      },
+      height: {
+        96: '24rem',
+      },
+    },
   },
   variants: {},
   plugins: [twForms, owl],
