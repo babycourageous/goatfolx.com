@@ -1,19 +1,24 @@
-<header class="fixed flex flex-row items-center md:items-baseline justify-between px-4 py-8 text-white w-full bg-header transition-all duration-300">
-  <h1 class="font-displayOne text-4xl text-center md:text-left leading-none">GoatFolx<span class="hidden md:block lg:inline lg:ml-4 font-displayOne text-xl text-right">billy goat rescue and native habitat restoration</span></h1>
-  <nav class="hidden md:block mt-4 md:mt-0">
-    <ul class="flex list-none">
+<header id="js-header" class="fixed text-white w-full bg-header transition-all duration-300 z-50">
+  <nav id="js-nav-menu" class="flex flex-row items-center justify-between p-4 md:items-baseline">
+    <h1 class="z-50 font-displayOne text-4xl text-center md:text-left leading-none">
+      <a href="/">GoatFolx</a>
+      <span class="hidden md:block lg:inline lg:ml-4 font-displayOne text-xl">billy goat rescue and native habitat restoration</span>
+    </h1>
+    <button id="js-nav-toggle" class="z-50">
+      <svg class="block md:hidden w-6 h-6 pointer" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+    <ul id="js-menu" class="fixed top-0 left-0 flex flex-col items-end w-full h-full list-none transition-transform duration-500 oh-4 transform -translate-x-full text-2xl bg-gray-900 pt-12 md:flex md:flex-row md:pt-0 md:transform-none md:bg-transparent md:flex md:relative md:text-base md:w-auto">
       <li>
-        <a href="">ABOUT US</a>
+        <a href="" class="block p-4 md:px-2 md:py-4">ABOUT US</a>
       </li>
-      <li class="ml-4">
-        <a href="">THE GOATS</a>
+      <li>
+        <a href="" class="block p-4 md:px-2 md:py-4">THE GOATS</a>
       </li>
-      <li class="ml-4">
-        <a href="">CONTACT</a>
+      <li>
+        <a href="" class="block p-4 md:px-2 md:py-4">CONTACT</a>
       </li>
     </ul>
   </nav>
-  <svg class="block md:hidden w-6 h-6 pointer" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-    <path d="M4 6h16M4 12h16m-7 6h7"></path>
-  </svg>
 </header>
