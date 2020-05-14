@@ -5,43 +5,21 @@ layout: base
 <div class="w-full">
   <img class="object-cover w-full h-screen" src="assets/images/goats.jpg" alt="">
 
-  <section class="py-16 px-10">
-    <div class="mx-auto max-w-lg">
-      <p class="mt-4 text-xl text-gray-800">Are invasive species like <strong>english ivy</strong>, <strong>privet</strong> and <strong>kudzu</strong> crowding your natural habitat?</p>
-      <p class="mt-4 text-gray-700">Our hungry billygoats will feast away the invasive species that are actively strangling the life out of your trees and bushes to clear a path for the cultivation of a native landscape that will thrive in the refreshed and fertilized soil that our
-    goats leave behind.</p>
-    </div>
-  </section>
+  {%- include "blurb.njk" -%}
 
-  <section class="py-6 px-4 bg-blue-600">
+  {# <section class="py-6 px-4 bg-blue-600">
     <div class="flex items-center justify-between">
       <p class="text-xl text-gray-100">Want to learn more?</p>
-      <button class="bg-blue-800 hover:bg-gray-100 text-gray-100 hover:text-blue-800 py-2 px-4 border border-gray-100 rounded focus:outline-none focus:shadow-outline">See our goats</button>
+      <a href="" class="bg-blue-800 hover:bg-gray-100 text-gray-100 hover:text-blue-800 py-2 px-4 border border-gray-100 rounded focus:outline-none focus:shadow-outline">Learn more about us!</a>
     </div>
-  </section>
+  </section> #}
 
-  <section class="lg:flex">
-    <div class="w-full lg:w-1/2">
-      <div class="h-96 lg:h-full">
-        <img class="block w-full h-full object-cover lg:h-auto lg:object-contain" src="assets/images/fam.jpg" alt="">
-        {#<img class="hidden lg:block w-full h-full object-cover" src="assets/images/goats.jpg" alt=""> #}
-        <img class="hidden lg:block w-full lg:object-contain" src="assets/images/bacchus.jpg" alt="">
-      </div>
-    </div>
-    <div class="w-full lg:w-1/2 p-6">
-      <h2 class="text-2xl">Let's work together</h2>
-      {%- include "form.njk" -%}
-    </div>
-  </section>
+  {%- include "cta.njk" -%}
+
+  {%- include "goats-intro.njk" -%}
+
+  {%- include "inquiry.njk" -%}
 
 </div>
-<footer class="w-full flex justify-between items-center py-4 px-6 bg-gray-900">
-  <p>
-    <a class="block text-gray-100" href="https://www.instagram.com/goat_folx/">
-      <svg class="w-10 h-10 fill-current" viewBox="0 0 100 100">
-        <path d="M67.768 18.727H32.232c-7.447 0-13.505 6.059-13.505 13.505v35.537c0 7.446 6.059 13.505 13.505 13.505h35.536c7.447 0 13.506-6.059 13.506-13.505V32.231c-.001-7.446-6.059-13.504-13.506-13.504zm-6.747 10.001a2.21 2.21 0 012.205-2.204h6.614a2.21 2.21 0 012.205 2.204v6.615a2.21 2.21 0 01-2.205 2.204h-6.614a2.21 2.21 0 01-2.205-2.204v-6.615zm6.747 49.226H32.232c-5.616 0-10.186-4.569-10.186-10.186V41.314h14.565c3.165-3.886 7.986-6.368 13.388-6.368a17.225 17.225 0 0113.389 6.368h14.564v26.454c.001 5.617-4.567 10.186-10.184 10.186z"></path>
-        <circle cx="50" cy="51.335" r="14.386"></circle>
-      </svg>
-    </a>
-  </p>
-</footer>
+
+{%- include "footer.njk" -%}
