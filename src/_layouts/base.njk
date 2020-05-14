@@ -14,7 +14,7 @@
   </head>
   <body class="flex flex-col min-h-screen font-sans bg-gray-100">
     {%- include "header.njk" -%}
-    <main class="flex flex-col justify-center items-center flex-1">
+    <main class="flex flex-col justify-center items-center flex-1 transition-all duration-500">
       {{ content | safe }}
     </main>
     <script src="/javascript/index.js"></script>
