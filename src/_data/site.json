@@ -1,7 +1,8 @@
 {
   "title": "Goat Folx",
   "url": "https://11ty-netlify-starter.netlify.com",
-  "description": "billy goat rescue and native habitat restoration",
+  "tagline": "billy goat rescue and native habitat restoration",
+  "description": "Rescuing little billygoats and helping them feast their way towards environmental restoration.",
   "nav": [
     {
       "item": "Home",
@@ -10,10 +11,6 @@
     {
       "item": "About",
       "url": "/about"
-    },
-    {
-      "item": "Contact Us",
-      "url": "/contact"
     }
   ]
 }
