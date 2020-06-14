@@ -1,7 +1,7 @@
 <header id="js-header" class="fixed text-white w-full bg-header transition-all duration-300 z-50">
   <nav id="js-nav-menu" class="flex flex-row items-center justify-between p-4 md:items-baseline">
     <h1 class="z-50 font-displayOne text-4xl text-center md:text-left leading-none">
-      <a href="/">GoatFolx</a>
+      <a href="/">{{site.title}}</a>
       <span class="hidden md:block lg:inline lg:ml-4 font-displayOne text-xl">{{site.tagline}}</span>
     </h1>
     <button id="js-nav-toggle" class="z-50">
@@ -10,9 +10,11 @@
       </svg>
     </button>
     <ul id="js-menu" class="fixed top-0 left-0 flex flex-col items-end w-full h-full list-none transition-transform duration-500 oh-4 transform -translate-x-full text-2xl bg-gray-900 pt-12 md:flex md:flex-row md:pt-0 md:transform-none md:bg-transparent md:flex md:relative md:text-base md:w-auto">
-      <li>
-        <a href="/about" class="block p-4 hover:underline md:px-2 md:py-4">ABOUT US</a>
-      </li>
+      {%- for route in site.routes -%}
+        <li>
+          <a href="{{route.url}}" class="block p-4 uppercase hover:underline md:px-2 md:py-4">{{route.title}}</a>
+        </li>
+      {%- endfor -%}
     </ul>
   </nav>
 </header>

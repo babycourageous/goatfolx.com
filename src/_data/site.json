@@ -3,13 +3,14 @@
   "url": "https://goatfolx.com",
   "tagline": "billy goat rescue and native habitat restoration",
   "description": "Rescuing little billy goats and helping them feast their way towards environmental restoration.",
+  "routes": [
     {
-      "item": "Home",
-      "url": "/"
+      "title": "About",
+      "url": "/about"
     },
     {
-      "item": "About",
-      "url": "/about"
+      "title": "Our Goats",
+      "url": "/our-goats"
     }
   ]
 }
