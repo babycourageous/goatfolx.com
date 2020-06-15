@@ -9,15 +9,16 @@
       <title>{{site.title}}</title>
     {% endif %}
     <meta name="Description" content="{{ renderData.description or description or site.description }}">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poiret+One&family=Unica+One&display=swap" rel="stylesheet">
+    {%- include "favicons.njk" -%}
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poiret+One&family=Unica+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ '/css/styles.css' | url }}">
   </head>
   <body class="flex flex-col min-h-screen font-sans bg-gray-100">
-    <!-- include svg sprite -->
-    <span style="display:none;">{% include "svg/sprite.symbol.svg" %}</span>
-    <main class="container flex flex-col justify-center items-center flex-1 mx-auto py-8">
+    {%- include "header.njk" -%}
+    <main class="flex flex-col justify-center items-center flex-1 transition-all duration-500">
       {{ content | safe }}
     </main>
+    {%- include "footer.njk" -%}
     <script src="/javascript/index.js"></script>
   </body>
 </html>

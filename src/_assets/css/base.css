@@ -1,3 +1,20 @@
+body {
+  transition: all 300;
+}
+
+body.shrink {
+  header {
+    @apply bg-gray-900;
+  }
+}
+body.reveal main {
+  transform: translateX(40%);
+  overflow-y: hidden;
+}
+body.reveal nav > ul {
+  transform: translateX(0);
+}
+/* 
 a {
   @apply text-teal-200 border-b border-teal-200;
-}
+} */
